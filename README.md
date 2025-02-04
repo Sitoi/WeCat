@@ -1,45 +1,84 @@
-# 微信聊天记录分析报告
+<h1 align="center">
+  <img src="./img/wecat.png" alt="WeCat" width="200">
+  <br>WeCat 微信聊天记录分析报告 📊
+<br>
+</h1>
 
-## 数据准备
+<p align="center">
+  <a href="https://github.com/Sitoi/WeCat/releases"><img src="https://img.shields.io/github/v/release/Sitoi/WeCat?color=blue&logo=github" alt="GitHub release"></a>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-green" alt="License"></a>
+  <a href="https://wecat.tech"><img src="https://img.shields.io/badge/website-WeCat-yellow" alt="Website"></a>
+</p>
 
-本文采用 [WX Backup](http://wxbackup.imxfd.com) 这款工具来获取微信聊天记录。
+<h5 align="center">🌟 WeCat 官方网站：https://wecat.tech</h5>
 
-### iTunes备份
+## ✨ 功能特点
 
-用iTunes连接iPhone，将内容备份到电脑上。请注意，不要选择”给iPhone备份加密“！
+- 📊 聊天记录可视化分析
+- 🔒 本地数据处理，保护隐私
+- 📱 支持多账号管理
+- 🔄 支持导出分析结果
+- 🌐 在线分享分析报告
 
-![iTunes备份](http://wxbackup.imxfd.com/images/itunes-only.png)
+## 📱 使用准备
 
-### 聊天记录导出
+### 第一步：iTunes 备份 🔄
 
-根据选择的账号和联系人导出聊天记录，瞬间即可导出选中的聊天记录。支持增量导出，即有新的内容更新到iPhone备份文件后，可以增加更新的内容到导出记录中。
+1. 用数据线连接 iPhone/iPad 到电脑
+2. 打开 iTunes 进行备份
+3. ⚠️ **重要提示**：备份时请勿选择「加密本地备份」选项
 
-![聊天记录导出](http://wxbackup.imxfd.com/images/wxbackup-only.png)
+![iTunes 备份](./img/itunes-backup.png)
 
-### 获取聊天记录 message.js 文件路径
+### 第二步：下载安装 💾
 
-![](./imgs/message_path.png)
+1. 从 [GitHub Releases](https://github.com/Sitoi/WeCat/releases) 下载最新版本
+2. 解压下载的文件
+3. 运行 `WeCat` 程序
 
-## 运行软件
+![WeCat 软件](./img/wecat-app.png)
 
-### 修改聊天记录路径
+## 🚀 使用教程
 
-```python
-import pygame
+### 1️⃣ 选择账号
 
-pygame.init()
-info = pygame.display.Info()
-wa = WeChatAnalysis(
-    message_path_list=[f"xx/js/message.js"],
-    width=info.current_w
-)
-wa.main()
-```
+选择「备份文件」并打开，然后选择需要分析的微信账号
 
-### 运行程序
+> 💡 如果只有单个账号，将自动跳过选择步骤
 
-![](./imgs/run.png)
+![选择账号](./img/wecat-accounts.png)
 
-### 分析结果
+### 2️⃣ 分析聊天记录
 
-![](./imgs/demo.jpeg)
+选择想要分析的联系人，系统将自动生成分析报告
+
+![分析报告](./img/wecat-report.png)
+
+### 3️⃣ 导出结果
+
+点击右上角「导出分析」按钮，保存分析结果 📤
+
+### 4️⃣ 在线分享
+
+1. 将导出的分析文件发送给对方
+2. 对方访问 [WeCat 官网](https://wecat.tech)
+3. 上传分析文件即可查看详细报告 🔗
+
+> 🔒 **隐私承诺**：所有数据分析均在本地完成，不会上传服务器存储。
+
+## 🤝 参与贡献
+
+欢迎加入 WeCat 开源社区！
+
+- 🐛 发现 Bug？请提交 [Issue](https://github.com/Sitoi/WeCat/issues)
+- 💡 有新想法？欢迎提交 [Pull Request](https://github.com/Sitoi/WeCat/pulls)
+- ⭐️ 喜欢项目？请给我们 Star 支持
+
+## 📝 开源协议
+
+本项目采用 [MIT 许可证](LICENSE) 开源，使用时请遵守开源协议。
+
+## 📮 联系我们
+
+- 官方网站：[https://wecat.tech](https://wecat.tech)
+- GitHub：[https://github.com/Sitoi/WeCat](https://github.com/Sitoi/WeCat)
