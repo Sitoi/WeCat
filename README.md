@@ -64,6 +64,14 @@
 2. 对方访问 [WeCat 官网](https://wecat.tech)
 3. 上传分析文件即可查看详细报告 🔗
 
+## 样例数据
+
+[样例数据](data/wecat-demo-report.json)
+
+### 移动端样例效果
+
+![分享](./img/wecat-mobile-demo-report.jpeg)
+
 > 🔒 **隐私承诺**：所有数据分析均在本地完成，不会上传服务器存储。
 
 ## 🤝 参与贡献
